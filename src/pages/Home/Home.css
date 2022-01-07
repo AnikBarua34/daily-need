@@ -1,0 +1,12 @@
+.info {
+	background-color: white;
+	transition: transform ease-in 0.2s;
+}
+.info:hover {
+	transform: translateY(-10px);
+}
+
+.partner {
+	height: 90px;
+	width: auto;
+}
