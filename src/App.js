@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Fragment } from 'react';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -38,6 +39,31 @@ function App() {
 			</div>
 		</div>
 	);
+=======
+import "./App.css";
+import Login from "./Components/Login/Login";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+function App() {
+  return (
+    <div>
+      <Login></Login>
+    </div>
+  );
+>>>>>>> 77f9d23439319799918c6f33274645b99b412fc9
 }
 
 export default App;
+
+/* "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnikBarua34/daily-need.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnikBarua34/daily-need/issues"
+  },
+  "homepage": "https://github.com/AnikBarua34/daily-need#readme" */
