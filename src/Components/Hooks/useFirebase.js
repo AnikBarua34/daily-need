@@ -7,7 +7,6 @@ import {
   signInWithPopup,
   signOut,
 } from "firebase/auth";
-import { Alert } from "bootstrap";
 
 initAuth();
 

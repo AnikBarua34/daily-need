@@ -6,6 +6,7 @@ import useFirebase from "../Hooks/useFirebase";
 
 const Login = () => {
   const { user, googleLogin } = useFirebase();
+  console.log(user?.email);
   const handleLogin = () => {
     googleLogin();
   };
@@ -39,7 +40,7 @@ const Login = () => {
               </p>
             </div>
           </Col>
-          {user && (
+          {user?.email && (
             <Alert variant="success">
               {user.displayName} successfully logged in
             </Alert>
