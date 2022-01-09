@@ -4,10 +4,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import Blogs from "./Components/Blogs/Blogs";
-import ContactUs from "./Components/ContactUs/ContactUs";
-import Footer from "./Components/Footer/Footer";
+
+
 import Header from "./Components/Header/Header";
-import Home from "./Components/Home/Home";
+
 import Shops from "./Components/Shops/Shops";
 import Login from "./Components/Login/Login";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -19,6 +19,11 @@ import MyOrders from "./Components/Dashboard/MyOrders/MyOrders";
 import ManageAllOrder from "./Components/Dashboard/ManageAllOrder/ManageAllOrder";
 import ManageProducts from "./Components/Dashboard/ManageProducts/ManageProducts";
 import MakeAdmin from "./Components/Dashboard/MakeAdmin/MakeAdmin";
+import AdminRoute from "./Components/Login/AdminRoute";
+import AddProduct from "./Components/Dashboard/AddProduct/AddProduct";
+import ContactUs from './Components/ContactUs/ContactUs';
+import Home from './Components/Home/Home';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -39,8 +44,8 @@ function App() {
 
             <Route path="/login" element={<Login />} />
 
-            <Route path="/dashboard" element={<DashboardHomee />} />
-            <Route path="/dashboard" element={<DashboardHomee />}>
+            <Route path="/dashboard" element={<PrivateRoute><DashboardHomee /></PrivateRoute>}>
+              {/* Normal User */}
               <Route
                 path="paynow"
                 element={
@@ -65,31 +70,41 @@ function App() {
                   </PrivateRoute>
                 }
               />
+              {/* Admin ROute */}
               <Route
                 path="manageAllOrders"
                 element={
-                  <PrivateRoute>
+                  <AdminRoute>
                     <ManageAllOrder />
-                  </PrivateRoute>
+                  </AdminRoute>
                 }
               />
               <Route
                 path="manageProducts"
                 element={
-                  <PrivateRoute>
+                  <AdminRoute>
                     <ManageProducts />
-                  </PrivateRoute>
+                  </AdminRoute>
                 }
               />
 
               <Route
                 path="makeAdmin"
                 element={
-                  <PrivateRoute>
+                  <AdminRoute>
                     <MakeAdmin />
-                  </PrivateRoute>
+                  </AdminRoute>
                 }
               />
+              <Route
+                path="addProduct"
+                element={
+                  <AdminRoute>
+                    <AddProduct />
+                  </AdminRoute>
+                }
+              />
+             
             </Route>
           </Routes>
 

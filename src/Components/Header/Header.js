@@ -41,13 +41,14 @@ const Header = () => {
           </Nav>
 
           <Nav className="me-auto text-center">
-            <Nav.Link as={Link} to="/dashboard">
+            
+            {user?.email ? (
+             <div> <Nav.Link as={Link} to="/dashboard">
               <GoPerson /> Dashboard
             </Nav.Link>
-            {user?.email ? (
               <Button onClick={logout} variant="secondary">
                 Logout
-              </Button>
+              </Button></div>
             ) : (
               <Nav.Link as={Link} to="/login">
                 <GoPerson /> Login
