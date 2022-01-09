@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import { ImFacebook2, ImTwitter, ImLinkedin, ImMail } from 'react-icons/im';
 
@@ -7,6 +8,19 @@ import { GrSend } from 'react-icons/gr';
 import './ContactUs.css';
 
 const ContactUs = () => {
+	function sendEmail(e) {
+		e.preventDefault();
+
+		emailjs.sendForm('service_83fblzd', 'template_177iipm', e.target, 'user_Xdat0CdWHdMypnLD2Zr77').then(
+			(result) => {
+				console.log(result.text);
+			},
+			(error) => {
+				console.log(error.text);
+			}
+		);
+	}
+
 	return (
 		<Container>
 			<div className="contactText ">
@@ -27,25 +41,10 @@ const ContactUs = () => {
 							<Image src="https://image.ibb.co/kUASdV/contact-image.png" className="img-fluid " alt="Responsive image" />
 							<h2>Contact </h2>
 							<h5>We love to hear from you !</h5>
-							{/* <div className="social ">
-								<p>Get connected with us on social networks:</p>
-								<a href="https://www.linkedin.com/in/sultanamehe/">
-									<ImLinkedin className="ms-3 text-white" />
-								</a>
-								<a href="https://www.facebook.com/sultanamehe/">
-									<ImFacebook2 className="ms-3 text-white" />
-								</a>
-								<a href="https://twitter.com/sultana_mehe">
-									<ImTwitter className="ms-3 text-white" />
-								</a>
-								<a href="mailto:sultanamehe01@gmail.com">
-									<ImMail className="ms-3 text-white" />
-								</a>
-							</div> */}
 						</div>
 					</div>
 					<Container className="col-md-9">
-						<Container className="contact-form">
+						{/* <Container className="contact-form">
 							<div className="form-group">
 								<label className="control-label col-sm-2" for="fname">
 									First Name:
@@ -86,7 +85,34 @@ const ContactUs = () => {
 									</button>
 								</div>
 							</div>
-						</Container>
+						</Container> */}
+
+						<form className="contact-form" onSubmit={sendEmail}>
+							<input type="hidden" name="contact_number" />
+							<div className="form-group">
+								<label className="control-label col-sm-2" for="fname">
+									Name:
+								</label>
+								<div className="col-sm-10">
+									<input type="text" className="form-control" id="fname" placeholder="Enter First Name" name="fname" />
+								</div>
+							</div>
+							<br />
+							<div className="form-group">
+								<label className="control-label col-sm-2" for="email">
+									Email:
+								</label>
+								<div className="col-sm-10">
+									<input type="email" className="form-control" id="email" placeholder="Enter email" name="email" />
+								</div>
+							</div>
+							<br />
+							<label className="control-label col-sm-2" for="message">
+								Message:
+							</label>
+							<textarea name="message" className="form-control" rows="5" id="messaage" />
+							<input type="submit" value="Send" />
+						</form>
 					</Container>
 				</Row>
 			</Container>
