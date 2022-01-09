@@ -1,9 +1,8 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import emailjs from '@emailjs/browser';
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import { ImFacebook2, ImTwitter, ImLinkedin, ImMail } from 'react-icons/im';
-
-import { GrSend } from 'react-icons/gr';
+import Swal from 'sweetalert2';
 
 import './ContactUs.css';
 
@@ -14,9 +13,18 @@ const ContactUs = () => {
 		emailjs.sendForm('service_83fblzd', 'template_177iipm', e.target, 'user_Xdat0CdWHdMypnLD2Zr77').then(
 			(result) => {
 				console.log(result.text);
+				Swal.fire({
+					icon: 'success}',
+					title: 'Message Sent Successfully',
+				});
 			},
 			(error) => {
 				console.log(error.text);
+				Swal.fire({
+					icon: 'error',
+					title: 'Ooops, something went wrong',
+					text: error.text,
+				});
 			}
 		);
 	}
@@ -44,49 +52,6 @@ const ContactUs = () => {
 						</div>
 					</div>
 					<Container className="col-md-9">
-						{/* <Container className="contact-form">
-							<div className="form-group">
-								<label className="control-label col-sm-2" for="fname">
-									First Name:
-								</label>
-								<div className="col-sm-10">
-									<input type="text" className="form-control" id="fname" placeholder="Enter First Name" name="fname" />
-								</div>
-							</div>
-							<div className="form-group">
-								<label className="control-label col-sm-2" for="lname">
-									Last Name:
-								</label>
-								<div className="col-sm-10">
-									<input type="text" className="form-control" id="lname" placeholder="Enter Last Name" name="lname" />
-								</div>
-							</div>
-							<div className="form-group">
-								<label className="control-label col-sm-2" for="email">
-									Email:
-								</label>
-								<div className="col-sm-10">
-									<input type="email" className="form-control" id="email" placeholder="Enter email" name="email" />
-								</div>
-							</div>
-							<div className="form-group">
-								<label className="control-label col-sm-2" for="message">
-									Message:
-								</label>
-								<div className="col-sm-10">
-									<textarea className="form-control" rows="5" id="messaage"></textarea>
-								</div>
-							</div>
-							<br />
-							<div className="form-group">
-								<div className="col-sm-offset-2 col-sm-10">
-									<button type="submit" className="btn btn-default">
-										Send <GrSend className="ms-3 text-white" />
-									</button>
-								</div>
-							</div>
-						</Container> */}
-
 						<form className="contact-form" onSubmit={sendEmail}>
 							<input type="hidden" name="contact_number" />
 							<div className="form-group">
@@ -94,7 +59,7 @@ const ContactUs = () => {
 									Name:
 								</label>
 								<div className="col-sm-10">
-									<input type="text" className="form-control" id="fname" placeholder="Enter First Name" name="fname" />
+									<input type="text" className="form-control" id="fname" placeholder="Enter Your Name" name="fname" />
 								</div>
 							</div>
 							<br />
