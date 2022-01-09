@@ -1,17 +1,12 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import { Routes, Route, Link, Outlet } from "react-router-dom";
+import {  Link, Outlet } from "react-router-dom";
 import useFirebase from "../../Hooks/useFirebase";
-import MakeAdmin from "../MakeAdmin/MakeAdmin";
-import ManageAllOrder from "../ManageAllOrder/ManageAllOrder";
-import ManageProducts from "../ManageProducts/ManageProducts";
-import MyOrders from "../MyOrders/MyOrders";
-import PayNow from "../PayNow/PayNow";
-import PrivateRoute from "../PrivateRoute";
-import Review from "../Review/Review";
+
 
 const DashboardHomee = () => {
   const {user,admin} =useFirebase();
+  console.log(admin);
   return (
     <div>
       <h1 className="bg-warning">This is Dashboard</h1>
@@ -21,7 +16,7 @@ const DashboardHomee = () => {
             <h2>Tripple-View-Laptop-Zone</h2>
           {/*Normal user */}
           {
-            !admin &&
+            (!admin && user?.email) &&
             <div> <Link to="/dashboard/paynow">
             <button
               className="btn btn-success"
@@ -50,7 +45,7 @@ const DashboardHomee = () => {
           }
           {/* Admin Panel */}
            {
-             admin && <div> <Link to="/dashboard/manageAllOrders">
+           (admin && user?.email) && <div> <Link to="/dashboard/manageAllOrders">
              <button
                className="btn btn-dark"
                style={{ textDecoration: "none", width: "100%" }}
