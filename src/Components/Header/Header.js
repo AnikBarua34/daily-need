@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-// import logo2 from '../../images/logo2.png';
+import logo3 from '../../images/logo3.png';
 import { GoPerson } from 'react-icons/go';
 import './Header.css';
 
@@ -9,9 +9,9 @@ const Header = () => {
 	return (
 		<Container fluid="md header">
 			<Navbar className="px-4 sticky-top fw-bold" collapseOnSelect expand="lg" variant="light">
-				{/* <div href="/">
-					<img width="180" src={logo2} alt="" />
-				</div> */}
+				<div href="/">
+					<img width="180" src={logo3} alt="" />
+				</div>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="me-auto text-center">
