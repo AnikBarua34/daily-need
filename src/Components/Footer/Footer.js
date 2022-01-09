@@ -1,5 +1,7 @@
 import React from 'react';
+import { Image } from 'react-bootstrap';
 import { ImFacebook2, ImTwitter, ImLinkedin, ImMail } from 'react-icons/im';
+import payment from '../../images/payment.png';
 import './Footer.css';
 
 const Footer = () => {
@@ -132,6 +134,9 @@ const Footer = () => {
 								<span className="subheading">Get up to date in your mailbox</span>
 							</form>
 						</div>
+					</div>
+					<div className="col">
+						<Image src={payment} className="img-fluid intro-img w-300 h-300" alt="Responsive image" />
 					</div>
 					<div className="row mt-5 pt-4 border-top">
 						<div className="col-md-6 col-lg-8 mb-md-0 mb-4">
