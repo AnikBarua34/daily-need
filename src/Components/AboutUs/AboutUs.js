@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
-// import about from '../../images/about.png';
+import about from '../../images/about.png';
 import './AboutUs.css';
 
 const AboutUs = () => {
@@ -28,9 +28,9 @@ const AboutUs = () => {
 								</p>
 							</div>
 						</Col>
-						{/* <Col md={6}>
+						<Col md={6}>
 							<Image src={about} className="img-fluid intro-img" alt="Responsive image" />
-						</Col> */}
+						</Col>
 					</Row>
 				</div>
 			</Container>
