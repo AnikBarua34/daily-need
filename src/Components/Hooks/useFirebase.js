@@ -7,7 +7,6 @@ import {
   signInWithPopup,
   signOut,
 } from "firebase/auth";
-import { Alert } from "bootstrap";
 
 initAuth();
 
@@ -67,9 +66,15 @@ const useFirebase = () => {
       })
       .finally(() => setIsLoading(false));
   };
+//   ADMIN SET UP
+useEffect(()=>{
+  fetch(`https://rocky-mesa-18729.herokuapp.com/addUsers/${user.email}`)
+.then(res=>res.json())
+.then(data=>setAdmin(data.Admin))
+},[user.email])
 
   return {
-    user,
+    user,admin,
     isLoading,
     googleLogin,
     logout,
