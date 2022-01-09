@@ -1,17 +1,15 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyCk-prgqY2boGNPquW4eJBTzdGEHipZ3Ns",
+  apiKey: process.env.REACT_APP_APIKEY,
 
-  authDomain: "daily-needbd.firebaseapp.com",
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_PROJECTID,
 
-  projectId: "daily-needbd",
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
 
-  storageBucket: "daily-needbd.appspot.com",
+  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
 
-  messagingSenderId: "619709336281",
+  appId: process.env.REACT_APP_APPID,
 
-  appId: "1:619709336281:web:892b6ef6a73b35ce2e0cc8",
-
-  measurementId: "G-PNHEBXTCBW",
+  measurementId: process.env.REACT_APP_MEASUREMENTID,
 };
-
 export default firebaseConfig;
