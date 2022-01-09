@@ -104,7 +104,7 @@ const Home = () => {
 						<Accordion.Item eventKey="1">
 							<Accordion.Header>Is there a warranty?</Accordion.Header>
 							<Accordion.Body>
-								Daily Need warrants that our sunglasses are free from manufacturing defects (in material or workmanship) for a period of 2 years from the date of purchase. This does not cover scratches on lenses, damages caused by accident, abuse, neglect, improper use or storage of the product,
+								Daily Need warrants that our sunglasses are free from manufacturing defects (in material or workmanship) for a period of 2 years from the date of purchase.. This does not cover scratches on lenses, damages caused by accident, abuse, neglect, improper use or storage of the product,
 								unauthorized modifications or normal wear .
 							</Accordion.Body>
 						</Accordion.Item>
