@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import { Carousel, Col, Container, Image, Row } from 'react-bootstrap';
+import { Accordion, Carousel, Col, Container, Image, Row } from 'react-bootstrap';
 import './Home.css';
 import banner from '../../images/banner4.png';
 import banner1 from '../../images/banner3.png';
@@ -76,48 +76,39 @@ const Home = () => {
 						<img className="w-100" src="https://cbr-honda.netlify.app/images/faq.png" alt="" />
 					</div>
 
-					<div className="accordion" id="accordionPanelsStayOpenExample">
-						<div className="accordion-item my-5 border rounded-3">
-							<h2 className="accordion-header" id="panelsStayOpen-headingOne">
-								<button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-									<h4>What are the most important things I should know about riding a bike?</h4>
-								</button>
-							</h2>
-							<div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-								<div className="accordion-body">
-									Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider.Most of the time when you want to turn in one
-									direction then you turn very slightly the other way first Hence if you ride very close to the kerb on a road you can’t actually turn away from it easily.
-								</div>
-							</div>
-						</div>
-						<div className="accordion-item my-5 border rounded-3">
-							<h2 className="accordion-header" id="panelsStayOpen-headingTwo">
-								<button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-									<h4>How can I tell if my helmet is old and I need a new one?</h4>
-								</button>
-							</h2>
-							<div id="panelsStayOpen-collapseTwo" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-								<div className="accordion-body">
-									I had mini-bikes and dirt bikes when I was a kid for many years, so, naturally when I got old enough for a drivers license, I needed a road bike too. Understand, that for many years now, I am one of those people that got tired of asking myself “Why am I still alive?” See, I lived
-									rural most of my life, so I didn’t ride in the city a whole lot. But believe it or not, it was a bit safer back then (1970’s and 80’s). Being young, married, and 3 little ones around, I found it a bit impractical to keep a bike for several years. Then, in the early 90’s, I got a
-									deal on another one, and remembered what I loved about them. However, I was now living in a suburb, and driving in town and heavy traffic most of the time.
-								</div>
-							</div>
-						</div>
-						<div className="accordion-item my-5 border rounded-3">
-							<h2 className="accordion-header" id="panelsStayOpen-headingThree">
-								<button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-									<h4>My bike has been in storage is it safe to ride?</h4>
-								</button>
-							</h2>
-							<div id="panelsStayOpen-collapseThree" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-								<div className="accordion-body">
-									It doesn’t take much. It can happen in less than half a second, and (despite what many others state here) you can have no control over it. THE unexpected HAPPENS. Accidents and near accidents happen. In the upper midwest USA, I was driving about 60mph on a narrow country road with
-									tall corn growing all around.
-								</div>
-							</div>
-						</div>
-					</div>
+					<Accordion defaultActiveKey="0">
+						<Accordion.Item eventKey="0">
+							<Accordion.Header>When will my order ship?</Accordion.Header>
+							<Accordion.Body>
+								After your payment is verified, it takes up to 24 hours to process and ship your order. This does not include weekends or holidays. Purchases made after 11 am PST will not be shipped out until the next business day. If you order after 11 am PST on a Friday, your order will likely be
+								shipped out on the following Monday.
+							</Accordion.Body>
+						</Accordion.Item>
+						<Accordion.Item eventKey="1">
+							<Accordion.Header>Will I have to pay international taxes & duties?</Accordion.Header>
+							<Accordion.Body>
+								Your order may be subject to import duties and taxes, which are levied once a shipment reaches your country. The general amount for the duties and taxes fee is about 20% of the dollar amount of the merchandise. However, this is just a general guideline and may vary depending on the
+								country to which the order was shipped. You should contact your customs office for specific amounts and percentages.
+							</Accordion.Body>
+						</Accordion.Item>
+						<Accordion.Item eventKey="1">
+							<Accordion.Header>I need to change something on my order. How can I do that?</Accordion.Header>
+							<Accordion.Body>If you need to change or cancel your order, please contact us immediately. Once our warehouse has processed your order, we will be unable to make any changes.</Accordion.Body>
+						</Accordion.Item>
+						<Accordion.Item eventKey="1">
+							<Accordion.Header>Why was my order canceled?</Accordion.Header>
+							<Accordion.Body>
+								"If your order was unexpectedly cancelled, chances are that our fraud filter marked your order as fraudulent. If you are certain that that is not true, please order again with a Paypal account. If you do not have Paypal, you can easily sign up at www.Paypal.com"
+							</Accordion.Body>
+						</Accordion.Item>
+						<Accordion.Item eventKey="1">
+							<Accordion.Header>Is there a warranty?</Accordion.Header>
+							<Accordion.Body>
+								Daily Need warrants that our sunglasses are free from manufacturing defects (in material or workmanship) for a period of 2 years from the date of purchase. This does not cover scratches on lenses, damages caused by accident, abuse, neglect, improper use or storage of the product,
+								unauthorized modifications, or normal wear and tear.
+							</Accordion.Body>
+						</Accordion.Item>
+					</Accordion>
 				</div>
 			</Container>
 
