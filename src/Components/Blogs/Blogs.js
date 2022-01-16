@@ -6,7 +6,7 @@ const Blogs = () => {
 	const [blogs, setBlogs] = useState([]);
 
 	useEffect(() => {
-		fetch(`https://pix-photography.herokuapp.com/blogs`)
+		fetch(`blog.json`)
 			.then((res) => res.json())
 			.then((data) => setBlogs(data));
 	}, []);

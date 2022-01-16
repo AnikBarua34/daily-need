@@ -6,7 +6,7 @@ const Shops = () => {
 	const [shops, setShops] = useState([]);
 
 	useEffect(() => {
-		fetch(`https://pix-photography.herokuapp.com/services`)
+		fetch(`shop.json`)
 			.then((res) => res.json())
 			.then((data) => setShops(data));
 	}, []);
@@ -14,7 +14,7 @@ const Shops = () => {
 	return (
 		<Container className="services">
 			<div className="text-center">
-				<h1>Our service packages</h1>
+				<h1>Our products</h1>
 			</div>
 			<div className="service-part">
 				<Row xs={1} md={3} className="g-4 ">

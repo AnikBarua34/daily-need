@@ -1,0 +1,128 @@
+[
+	{
+		"id": 1,
+		"name": "Havit Gamenote HV-H2032D Gaming Headphone",
+		"price": "920",
+		"description": "Havit H763D is a Gaming Headphone available in Black Color. This is a Wired Headphone that utilizes 3.5mm audio jacks for connectivity. The headphone cord has a length of 1.8m. It is available in both single",
+		"img": "https://www.startech.com.bd/image/cache/catalog/headphone/havit/hv-h2032d/gamenote-hv-h2032d-1-228x228.jpg"
+	},
+	{
+		"id": 2,
+		"name": "Havit H763D Gaming Headphone Black",
+		"price": "875",
+		"description": "The new Havit Gamenote HV-H2032D Gaming Headphone comes with 3.5mm Jack + USB plug. This headphone is featured with 20 Hz - 20 kHz Frequency Response, φ6.0*5.0MM in Microphone, 108±3dB Sensitivity, 32±15%Ω      ",
+		"img": "https://www.startech.com.bd/image/cache/catalog/headphone/havit/hv-h2032d/gamenote-hv-h2032d-1-228x228.jpg"
+	},
+	{
+		"id": 3,
+		"name": "4Tech HS-9 Stereo Headphone Black",
+		"price": "1500",
+		"description": "The A4Tech HS-9 Stereo Headphone helps you to add balance and tone to your favorite tunes and clarity to your calls. Stunning Sound. Superior Comfort! Fully compatible with applications such as calls, Skype, ",
+		"img": "https://www.startech.com.bd/image/cache/catalog/headphone/a4tech/hs-9/a4tech-hs-9-stereo-headphone-black-228x228.jpg"
+	},
+	{
+		"id": 4,
+		"name": "Fantech MH82 Echo Gaming Headphone",
+		"price": "2,750",
+		"description": "Fantech MH82 Echo Multi Platform Gaming Headphone comes with 3.5mm TRRS Jack, 20HZ – 20KHZ Frequency Response, 16 Ω ± 15% Impedance, <200MA Current. This headphone also designed with PU Leather Headband",
+		"img": "https://www.startech.com.bd/image/cache/catalog/headphone/fantech/mh82/mh82-1-228x228.jpg"
+	},
+	{
+		"id": 5,
+		"name": "EKSA E3000 USB Gaming Headphone",
+		"price": "2,750",
+		"description": "The EKSA E3000 headphone features a 108B chip and a 40mm horn and a 7.1 Surround Sound. It produces superior stereo sound featuring an adjustable noise-canceling mic, ski-band headband, and breathable  ",
+		"img": "https://www.startech.com.bd/image/cache/catalog/headset/eksa/e3000/e3000-01-228x228.jpg"
+	},
+	{
+		"id": 6,
+		"name": "EKSA E1000 Gaming Headset",
+		"price": "2,970",
+		"description": "The EKSA E1000 Gaming Headset offers stereo sound cool RGB gradient LED light to please your aesthetic needs featuring a Flip-up noise-canceling microphone, ergonomic design for comfort, durability, and",
+		"img": "https://www.startech.com.bd/image/cache/catalog/headset/eksa/e1000/e1000-01-228x228.jpg"
+	},
+	{
+		"id": 7,
+		"name": "Dell Inspiron 15 3511 Core i3 11th Gen Laptop",
+		"price": "57,510",
+		"description": "Dell Inspiron 15 3511 Laptop featured with Intel Intel Core i3-1115G4 Processor (6M Cache, 3.00 GHz up to 4.10 GHz) with Intel UHD Graphics. From this laptop you will get the best combination of Windows features.",
+		"img": "https://www.startech.com.bd/image/cache/catalog/laptop/dell/inspiron-15-3511/inspiron-15-3511-88989-500x500.jpg"
+	},
+	{
+		"id": 8,
+		"name": "Acer Extensa 15 Core i5 10th Gen Laptop",
+		"price": "57,510",
+		"description": "Acer Extensa 15 EX215-52-58SQ Laptop comes with Intel Core i5-1035G1 Processor (6M Cache, 1.00 GHz up to 3.60 GHz), 8GB (2 x 4GB) 2666MHz DDR4 RAM, 1TB 5400rpm SATA3HDD, Intel UHD Graphics and Free-Dos. This Laptop is",
+		"img": "https://www.startech.com.bd/image/cache/catalog/laptop/acer/extensa-ex215/extensa-ex215-1-500x500.jpg"
+	},
+	{
+		"id": 9,
+		"name": "HP 15s-du3528TU Core i3 11th Gen Laptop",
+		"price": "57,510",
+		"description": "HP 15s-du3528TU Laptop comes with Intel Core i3-1115G4 Processor (6M Cache, 3.00 GHz up to 4.10 GHz), 8GB DDR4 (2 x 4GB) RAM, 1TB 5400RPM SATA HDD and  This Laptop featured with Intel UHD Graphics 3-cell, ",
+		"img": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/hp-15s/hp-15s-4-500x500.jpg"
+	},
+	{
+		"id": 10,
+		"name": "Acer Extensa EX215-52 Core i5 10th Gen",
+		"price": "60,760",
+		"description": "Acer Extensa EX215-52 Laptop comes with Intel Core i5-1035G1 Processor (6M Cache, 1.00 GHz up to 3.60 GHz), 8GB DDR4 SODIMM single-channel RAM, 1TB 2.5-inch 5400RPM HDD, Intel UHD Graphics with Genuine Windows 10. ",
+		"img": "https://www.startech.com.bd/image/cache/catalog/laptop/acer/extensa-ex215/extensa-ex215-1-500x500.jpg"
+	},
+	{
+		"id": 11,
+		"name": "Dell Inspiron 15 3505 Ryzen 5 3500U Laptop",
+		"price": "62,350",
+		"description": "Dell Inspiron 15 3505 FHD Laptop comes with AMD Ryzen 5 3500U Processor (4M Cache, 2.1 GHz up to 3.7 GHz), 15.6-inch FHD (1920 x 1080) Anti-glare LED Backlight Non-Touch Narrow Border WVA Display, 8GB ",
+		"img": "https://www.startech.com.bd/image/cache/catalog/laptop/dell/15-3505/3505-01-500x500.jpg"
+	},
+	{
+		"id": 12,
+		"name": "ASUS VivoBook 15 K513EA Core i3 11th Gen Laptop",
+		"price": "62,500",
+		"description": "ASUS VivoBook 15 K513EA FHD Laptop comes with Intel Core i3-1115G4 Processor (6M Cache, 3.00 GHz up to 4.10 GHz) and 8GB DDR4 3200MHz SDRAM onboard, 512GB M.2 NVMe PCIe 3.0 SSD. This Asus VivoBook 15 designed with 15",
+		"img": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/vivobook-14-k413ea/vivobook-14-k413ea-06-500x500.jpg"
+	},
+	{
+		"id": 13,
+		"name": "Xiaomi Smart Watch Turnish Global Version",
+		"price": "2,860",
+		"description": "Mibro Air Smart Watch will help you to monitor your heart rate throughout the day. This model is ideal not only for daily use but also for systematic sports activities. The smartwatch is capable of storing ",
+		"img": "https://www.startech.com.bd/image/cache/catalog/smart-watch/xiaomi/mibro-air/mibro-air-500x500.jpg"
+	},
+	{
+		"id": 14,
+		"name": "Xiaomi Haylou RT LS05S Smart Watch",
+		"price": "3080",
+		"description": "Xiaomi Haylou RT LS05S Smart Watch comes with an excellent screen and long battery life at a low price. Sales start in March 2021. It featured with Online dial replacement, Heart rate monitoring, 12 sport modes,",
+		"img": "https://www.startech.com.bd/image/cache/catalog/smart-watch/xiaomi/haylou-rt-ls05s/haylou-rt-ls05s-01-500x500.jpeg"
+	},
+	{
+		"id": 15,
+		"name": "Kieslect L11 Lady Smart Watch with Extra Strap",
+		"price": "3,850",
+		"description": "The Kieslect L11 is an excellent Smart Watch. This particular smartwatch model is specially made for women's usage. This is why this watch comes with some women-centric features. This Round dialed smartwatch is ",
+		"img": "https://www.startech.com.bd/image/cache/catalog/smart-watch/kieslect/l11/kieslect-l11-01-500x500.jpg"
+	},
+	{
+		"id": 16,
+		"name": "Xiaomi Haylou RT2 LS10 Smart Watch",
+		"price": "3,850",
+		"description": "Xiaomi Haylou RT2 LS10 featured with Retina HD display, Heart rate monitoring, Sleep monitoring options, 12 Workout Modes, SpO2 Tracking, Considerate Care, All-Day Heart Rate Monitoring, IP68 Waterproof, and",
+		"img": "https://www.startech.com.bd/image/cache/catalog/smart-watch/xiaomi/haylou-rt2-ls10/haylou-rt2-ls10-01-500x500.jpeg"
+	},
+	{
+		"id": 17,
+		"name": "WiWU SW04 Smart Watch",
+		"price": "4,600",
+		"description": "WiWU SW04 is a waterproof Smart Watch. The WiWU Smart Watch is designed with 1.28” TFT LCD, 240*240 full round display. This Smart watch comes with Charging type: Magnetic charging, Battery: 285Mah. It is made with",
+		"img": "https://www.startech.com.bd/image/cache/catalog/smart-watch/wiwu/sw04/sw04-01-500x500.jpg"
+	},
+	{
+		"id": 18,
+		"name": "Xiaomi Amazfit GTS 2 mini Smart Watch ",
+		"price": "30",
+		"description": "The Xiaomi Amazfit GTS 2 mini features with a 1.55-inch AMOLED screen, meaning your display will be exciting, vibrant, and practical whenever you check the time. It features carefully curved 2.5D glass to enhance ",
+		"img": "https://www.startech.com.bd/image/cache/catalog/smart-watch/xiaomi/amazfit-gts-2-mini/amazfit-gts-2-mini-01-500x500.jpg"
+	}
+]
